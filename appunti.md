@@ -12,6 +12,9 @@
     - [Prodotto cartesiano](#prodotto-cartesiano)
   - [Logica](#logica)
     - [Proposizione](#proposizione)
+      - [Implicazione](#implicazione)
+    - [Equivalenza tra proposizioni](#equivalenza-tra-proposizioni)
+  - [Insiemi Numerici](#insiemi-numerici)
 
 <!-- /code_chunk_output -->
 
@@ -48,10 +51,10 @@ esempio: $A=\{1,2,3\}; B=\{n \in \mathbb{N} \vert n \geq 2\}; A \cup B = \{n \in
 ### Intersezione tra insiemi
 $A \cap B =\{x \in A \wedge c \in B\}$
 esempio con Eulero Venn:
-<img src="image-2.png" height="110px"> l'area verde è $A \cap B$
+<img src="image-2.png" height="120px">
 
 ### Prodotto cartesiano
-Dati 2 insiemi $A, B$ si chiama prodotto cartesiano tra l'insieme $A$ e $B$ e si indica con il simbolo $A \times B$ l'insieme di tutte le coppie ordinate $(a, b)$ in modo tale che $a \in A, b \in B$
+Dati 2 insiemi $A, B$ si chiama **prodotto cartesiano** tra l'insieme $A$ e $B$ e si indica con il simbolo $A \times B$ l'insieme di tutte le coppie ordinate $(a, b)$ in modo tale che $a \in A, b \in B$
 $A \times B = \{ (a, b) \vert a \in A \wedge b \in B\}$
 
 esempio: $A=\{1, 2, 3\}; B=\{4, 5\};$
@@ -61,7 +64,31 @@ solitamente $A \times B \neq B \times A$
 
 ## Logica
 ### Proposizione
+<ins>Definizione</ins> una **proposizione** è una affermazione di cui si può dire se è VERA o FALSA.
+#### Implicazione
+$p \Rightarrow q$
+Il fatto che la proposizione $p$ sia **vera** implica che anche la proposizione $q$ è **vera**. Se, invece, $p$ è **falsa** non posso dire <ins>nulla</ins> su $q$.
+NB: Se $q$ è **vera** non posso dire nulla su $p$.
+**Contronominale** Se $q$ è **falsa** allora $p$ è **falsa**.
 
+### Equivalenza tra proposizioni
+Nel caso in cui contemporaneamente $p \Rightarrow q$ e $q \Rightarrow p$ diciamo che $p$ e $q$ sono **equivalenti** e scriviamo $p \Leftrightarrow q$ (se e solo se)
+$p$ è **vera** se e solo se $q$ è **vera**
+
+## Insiemi Numerici
+|Simbolo|Nome insieme|elementi|
+|:---:|:---:|:---|
+|$\mathbb{N}$|numeri naturali|$\{ 0,1,2,\dots \}$|
+|$\mathbb{Z}$|numeri interi|$\{\dots, -2, -1, 0, 1, 2, \dots\}$|
+|$\mathbb{Q}$|numeri razionali|$\{ \frac{m}{n} \vert m, n \in \mathbb{Z}, n \neq 0 \}$|
+|$\mathbb{R}$|numeri reali|si possono rappresentare graficamente con una retta|
+
+Non posso coprire tutti i punti di una retta con i numeri razionali
+**Teorema** se $q^2=2 \Rightarrow q \notin \mathbb{Q}$
+![proiezione della diagonale di un quadrato di lato 1 sulla retta r](image-3.png)
+La **contronominale** $q \in \mathbb{Q} \Rightarrow q^2 \neq 2$
+Dimostriamo per assurdo
+<ins>Dimostrazione</ins>: supponiamo per assurdo che esiste almeno un $q \in \mathbb{Q}$ tale che $q^2=2$. Sia $q$ della forma $\frac{n}{m}$ con $n, m \in \mathbb{Z}$ 
 
 <!-- Footnotes -->
 [^1]:$\emptyset=$ insieme vuoto
