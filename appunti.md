@@ -15,6 +15,9 @@
       - [Implicazione](#implicazione)
     - [Equivalenza tra proposizioni](#equivalenza-tra-proposizioni)
   - [Insiemi Numerici](#insiemi-numerici)
+    - [Insiemi separati](#insiemi-separati)
+  - [Funzioni](#funzioni)
+    - [Funzione composta](#funzione-composta)
 
 <!-- /code_chunk_output -->
 
@@ -88,7 +91,54 @@ Non posso coprire tutti i punti di una retta con i numeri razionali
 ![proiezione della diagonale di un quadrato di lato 1 sulla retta r](image-3.png)
 La **contronominale** $q \in \mathbb{Q} \Rightarrow q^2 \neq 2$
 Dimostriamo per assurdo
-<ins>Dimostrazione</ins>: supponiamo per assurdo che esiste almeno un $q \in \mathbb{Q}$ tale che $q^2=2$. Sia $q$ della forma $\frac{n}{m}$ con $n, m \in \mathbb{Z}$ 
+<ins>Dimostrazione</ins>: supponiamo per assurdo che esiste almeno un $q \in \mathbb{Q}$ tale che $q^2=2$. Sia $q$ della forma $\frac{n}{m}$ con $n, m \in \mathbb{Z}$ supponiamo per assurdo che esiste almeno un $q=\frac{n}{m},n,m \in \mathbb{Z},m \neq 0$ posso supporre che $q$ sia ridotta ai minimi termini.
+Dall'ipotesi assurda so che $q = \frac{n}{m} q^2=\frac{n^2}{m^2}$
+$\frac{n^2}{m^2}=2 \Longleftrightarrow n^2=2m^2 \Rightarrow n^2$ deve essere pari $\Rightarrow n$ è pari
+se $n$ è pari, $n$ è della forma $n=2p, p \in \mathbb{Z}$
+Quindi $n^2=2m^2 \leftrightarrow 4p^2=2m^2 \Leftrightarrow m^2=2p^2$
+quindi $m^2$ è pari, pertanto m è pari, ma questo è *assurdo* perché $\frac{n}{m}$ era ridotta ai minimi termini
+($m$, $n$ entrambi pari $\rightarrow$ posso semplificare almeno con 2)
+
+### Insiemi separati
+<ins>Definizione</ins> siano $a$, $b$ due sottoinsiemi dell'insieme dei numeri reali, diciamo che gli insiemi $A$, $B$ sono separati se $\forall a \in $A$, b \in B$ si ha $a \leq b$.
+Alcuni esempi
+- 1) $B = \{ x \in \mathbb{R} \vert x>0\}; A=\{x \in \mathbb{R} \vert x \leq 0\}$
+- 2) $A= \{x \in \mathbb{R} \vert x \leq -2\}; B=\{x \in \mathbb{R} \vert x \geq 0\}$
+
+L'insieme $\mathbb{R}$ soddisfa l'**assioma di completezza**; $\mathbb{R}$ è completo cioè $\forall A, B \subseteq \mathbb{R}$ separati $\exists c$ tale che $a \leq c \leq b, \forall a \in A, \forall b \in B$. Ovvero $c$ viene detto elemento di separazione.
+
+nel 1° es: 0 è l'unico elemento di separazione
+nel 2° es: qualunque numero reale $\geq -2$ e $\le 0$ è elemento di separazione.
+
+## Funzioni
+<ins>Definizione </ins> siano $A, B$ insiemi non vuoti, si chiama funzione di $A$ in $B$, scritto $f: A \rightarrow B, a \mapsto f(a)$, ogni "legge" che associa ad ogni elemento $a \in A$ almeno un elemento $b \in B$
+
+<ins>Definizione</ins> Data $f: A \rightarrow B$ poniamo $f(A):=\{f(a) \vert a \in A\}$. Si pone inoltre $graph(f):={a, f(a) \vert a \in A}$ (grafico di f)
+
+Osservazione $f(A) \subseteq B$ NB: possono non coincidere
+coincidere $graph(f) \subseteq A \times B$
+
+Esempio:
+$f: \mathbb{R} \leftarrow \mathbb{R}$
+$x \leftarrow f(x) = e^x$
+$f(\mathbb{R}) = \{e^x \vert x \in \mathbb{R}\} = ]0, +\infty[ = \{y \in \mathbb{R} \vert 0 <y< +\infty\}$
+(in questo esempio Codominio $\neq$ Insieme delle immagini)
+
+
+<ins>Definizione</ins> Sia $f: A \rightarrow B$ funzione. Essa si dice:
+- Iniettiva se $\forall a_1, a_2 \in A$ con $a_1 \neq a_2$ si ha $f(a_1) \neq f(a_2)$
+- Suriettiva se $f(A) = f(B)$ (ossia $\forall b \in B \exists a \in A$ tale che $b = f(a)$)
+- Biettiva se è sia iniettiva che suriettiva
+
+Osservazione: abbiamo definito f **iniettiva** se e solo se $\forall a_1, a_2 \in A$ con $a_1 \neq a_2$ si ha $f(a_1) \neq f(a_2)$
+usando la logica $p \Rightarrow q$ possiamo scrivere la
+**contronominale** $\forall a_1, a_2 \in A, f(a_1) = f(a_2) \Rightarrow a_1 = a_2$
+
+### Funzione composta
+<ins>Definizione</ins> Siano $f: A \rightarrow B$ e $g: C \rightarrow D$ due funzioni. Allora è benposta un'altra funzione denotata $g \circ f$ (si legge g composto f o composizione di f e g)
+$g \circ f:$ |$A \rightarrow D$
+$a \mapsto (g \circ f)(a):= g(f(a))$
+
 
 <!-- Footnotes -->
 [^1]:$\emptyset=$ insieme vuoto
