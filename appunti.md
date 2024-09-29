@@ -18,6 +18,7 @@
     - [Insiemi separati](#insiemi-separati)
   - [Funzioni](#funzioni)
     - [Funzione composta](#funzione-composta)
+    - [Funzione inversa](#funzione-inversa)
 
 <!-- /code_chunk_output -->
 
@@ -136,10 +137,29 @@ usando la logica $p \Rightarrow q$ possiamo scrivere la
 
 ### Funzione composta
 <ins>Definizione</ins> Siano $f: A \rightarrow B$ e $g: C \rightarrow D$ due funzioni. Allora è benposta un'altra funzione denotata $g \circ f$ (si legge g composto f o composizione di f e g)
-$g \circ f:$ |$A \rightarrow D$
-$a \mapsto (g \circ f)(a):= g(f(a))$
+|$g \circ f:$|
+|:---|
+|$A \rightarrow D$|
+|$a \mapsto (g \circ f)(a):= g(f(a))$|
+
+<img src="image-4.png" width="400px">
+
+<img alt="warning" src="warn.png" width="30px"> Attenzione: $g \circ f \neq f \circ g$
+
+### Funzione inversa
+<ins>Definizione</ins> Sia $f: A \rightarrow B$ funzione. Essa si dice invertibile se esiste $g: B \rightarrow A$ tale che valgono contemporaneamente le seguenti due condizioni:
+1. $g(f(a))=a, \forall a \in A$
+2. $f(g(b))=b, \forall b \in B$
+In tal caso si può provare che tale g è unica ed essa si chiama la [^3] **funzione inversa** di $f$ e si denota con $f^{-1}$
+
+**Teorema:** Una funzione è invertibile se e solo se è biettiva
+Osservazione: se $f$ è biunivoca allora $\forall b \in B \exists! a \in A$ tale che $b=f(a)$
+
+
+
 
 
 <!-- Footnotes -->
 [^1]:$\emptyset=$ insieme vuoto
 [^2]: $\vee=$ vel / OR / oppure
+[^3]: abbiamo scritto **la** funzione inversa perché è unica, è importante specificare gli articoli nelle definizioni
