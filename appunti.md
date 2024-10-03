@@ -21,6 +21,9 @@
     - [Funzione inversa](#funzione-inversa)
   - [Limiti superiori e inferiori](#limiti-superiori-e-inferiori)
     - [Teorema dell'estremo superiore](#teorema-dellestremo-superiore)
+    - [Esempi di monotonia](#esempi-di-monotonia)
+      - [Funzione strettamente crescente](#funzione-strettamente-crescente)
+      - [Funzione crescente](#funzione-crescente)
 
 <!-- /code_chunk_output -->
 
@@ -159,7 +162,7 @@ Osservazione: se $f$ è biunivoca allora $\forall b \in B \exists! a \in A$ tale
 
 Consideriamo la funzione $f: \mathbb{R} \rightarrow \mathbb{R}$
 $x \mapsto f(x)=x^2$
-<img src="image-5.png" width="400px">
+<img src="image-5.png" width="350px">
 Questa funzione non è invertibile perché non è ne iniettiva ne suriettiva
 Non è iniettiva perché $f(-1)=f(1)$ (due elementi distinti di $A$ hanno la stessa immagine)
 Non è suriettiva perché una qualsiasi $f(x)=k$ con $ k< 0 $ non interseca il grafico di $f$
@@ -176,7 +179,7 @@ ora $F$ è suriettiva ma comunque non iniettiva.
 Se restringiamo il dominio di $F$ (quindi lo "tagliamo") otteniamo ad esempio
 $\varphi(x)=x^2$
 $\varphi: [0, +\infty[ \rightarrow [0, +\infty[$
-<img src="image-6.png" width="300px">
+<img src="image-6.png" width="250px">
 $\varphi$ è quindi iniettiva e suriettiva, quindi biunivoca
 
 Dato che è biunivoca, per il teorema di cui sopra possiamo affermare che è **invertibile**.
@@ -258,14 +261,26 @@ $A=\{frac{1}{n} \vert n \in \mathbb{N} \backslash \{0\} \}$
 Verificare che $0$ è $\inf A$ benché $A$ **non** sia dotato di minimo
 
 <ins>Definizione</ins> Sia $f:A \rightarrow \mathbb{R}$ funzione (con $A$ insieme qualunque).
-- Se esistono, si pone $\max_A f:=\max f(A)$
-- Analogamente $\min_A f:=\min f(A)$
+- Se esistono, si pone $\max_A f:=\max f(A)$[^8]
+- Analogamente $\min_A f:=\min f(A)$[^9]
 - Esiste certamente $\sup_A f:=\sup f(A)$
 - Analogamente $\inf_A f:=\inf f(A)$
 
+<!-- Lezione del 24/09/2024 -->
+<!-- ! TODO: ricopia appunti -->
 
+### Esempi di monotonia
+NB: il dominio naturale di una funzione è diverso dal dominio della funzione stessa; può essere che sia stata limitata
 
+#### Funzione strettamente crescente
+|f(x)|graph|
+|---|---|
+|$f(x)=x^2 \vert [0, +\infty[$[^10] <br> se è **strettamente crescente** ($<$) <br> allora deve per forza essere **crescente** ($\leq$)[^11]|<img src="image-6.png" width="200px">|
 
+#### Funzione crescente
+|f(x)|graph|
+|---|---|
+|prendendo due valori $x_1$, $x_2$ <br> possiamo notare che in un tratto della funzione si verifica che <br> $f(x_1)=f(x_2)$|<img src="image-7.png" width="300px">|
 
 
 
@@ -281,3 +296,7 @@ Verificare che $0$ è $\inf A$ benché $A$ **non** sia dotato di minimo
 [^5]: dimostrazione difficile, non la faremo
 [^6]: per definizione di maggiorante
 [^7]: <img alt="warning" src="warn.png" width="30px"> Non è il $\max A$
+[^8]: $\max f(A)\{f(a) \vert a \in A\}
+[^9]: $\min f(A)\{f(a) \vert a \in A\}
+[^10]: in questo caso il dominio naturale di $f$ è $\mathbb{R}$ ma il dominio della funzione che abbiamo definito è $[o, +\infty[$
+[^11]: essere strettamente crescente è un caso particolare della crescenza in senso lato. Analogamente per la decrescenza.
