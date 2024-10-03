@@ -282,10 +282,47 @@ NB: il dominio naturale di una funzione è diverso dal dominio della funzione st
 |---|---|
 |prendendo due valori $x_1$, $x_2$ <br> possiamo notare che in un tratto della funzione si verifica che <br> $f(x_1)=f(x_2)$|<img src="image-7.png" width="300px">|
 
+### Funzione monotona
+|$f(x)$|graph|
+|---|---|
+|$f(x)=1$ non può essere considerata costante <br> è sia crescente che decrescente|img|
 
+### Funzione con asintoto in 0
+|$f(x)$|graph|
+|---|---|
+|$f:\mathbb{R} \backslash \{0\} \rightarrow \mathbb{R}$ <br> $f(x)=frac{1}{x}$ <br> $f$ è **decrescente** se ristretta a $]-\infty, 0]$ <br> $f$ è **decrescente** se ristretta a $[0, +\infty[$ <br> non è decrescente su $\mathbb{R} \backslash \{0\}$|img|
 
+### Parabola
+|$f(x)$|graph|
+|---|---|
+|$f(x)=x^2$ su $\mathbb{R}$ non è nè **crescente** nè **decrescente**|img|
 
+## Funzioni esponenziali
+$y=a^x$ con $a>0$
 
+<ins>Osservazione</ins> perché $a$ deve essere positivo
+$-8=(-2)^3=(-2)^3*\frac{1}{2}*2=(-2)^2*\frac{1}{2}*3=\{[(-2)^2]^\frac{1}{2}\}^3={[4]^\frac{1}{2}}^3=\{\sqrt{4}\}^3={2}^3=8$ **impossibile**
+
+$a=1 y=1^x=1 \rightarrow y=1$ non si ha più una funzione esponenziale
+Quindi la funzione esponenziale per essere definita come tale deve avere la base tra $0$ e $1$ oppure maggiore di $1$
+
+se $a>1$
+$f:\mathbb{R} \rightarrow \mathbb{R} f(x)=a^x f(\mathbb{R})=\mathbb{R}^+ \backslash \{0\}$
+
+|graph|proprietà|
+|---|---|
+|img|$a^x>0 \forall x \in \mathbb{R}$<br>$a^x$ è strettamente crescente<br>all'aumentare di $a$ aumenta la rapidità del grafico<br>passa per $(0,1)$|
+
+se $0<a<1$
+$f:\mathbb{R} \rightarrow \mathbb{R} f(\mathbb{R})=\mathbb{R}^+ \backslash \{0\}$
+
+|graph|proprietà|
+|---|---|
+|img|$a^x \forall x \in \mathbb{R}$<br>$a^x$ è strettamente crescente<br>al diminuire di $a$ aumenta la rapidità del grafico<br>passa sempre per $(0,1)$|
+
+## Logaritmi
+### Cambiamento di base dei logaritmi
+## La funzione logaritmica
 
 
 <!-- Footnotes -->
