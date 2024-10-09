@@ -320,8 +320,37 @@ $f:\mathbb{R} \rightarrow \mathbb{R} f(\mathbb{R})=\mathbb{R}^+ \backslash \{0\}
 |---|---|
 |img|$a^x \forall x \in \mathbb{R}$<br>$a^x$ è strettamente crescente<br>al diminuire di $a$ aumenta la rapidità del grafico<br>passa sempre per $(0,1)$|
 
-## Logaritmi
+## Logaritmi (e le loro proprietà)
+$log_ab=x$
+a: base; b: argomento; x: logaritmo
+<ins>Definizione</ins> $x$ è l'**unica** soluzione della equazione $a^x=b, b>0, a>0, a \neq 1$
+
+### Proprietà
+1. $\forall b,c >0, log_ab+log_ac=log_a(b * c)$
+**Dimostrazione**
+$z_1=log_ab \Rightarrow a^{z_1}=b$
+$z_2=log_ac \rightarrow a^{z_2}=c$
+$z=log_ab*c \Rightarrow a^z=b*c$ voglio dimostrare che $z_1+z_2 = z$
+$a^z=bc=a^{z_1}a^{z_2}, a^z=a^{z_1+z_2}$ per la proprietà delle potenze $z=z_1+z_2$
+
+2. $\forall b, c >0 log_ab-log_ac=log_a \frac {b}{c}$
+3. $\forall b>0, \alpha \in \mathbb{R} log_ab^\alpha=\alpha log_ab$
+
+**Dimostrare 2, 3**
+
+Esempi
+- $log_10 3 - log_10 2 = log_10 \frac{3}{2}$
+- $log_2 4 + log_2 5 = log_2 20$
+- $log_10 \sqrt{3}{5}=\frac{1}{3}$
+
 ### Cambiamento di base dei logaritmi
+$log_a b = \frac{log_c b}{log_c a}, b>0, a>0, a \neq 1$
+
+**Dimostrazione**
+$z= log_a b \Rightarrow a^z=b$
+$z_1 = log_c b \rightarrow c^{z_1}=b$
+$z_2=log_c a \Rightarrow c^{z_2}=a$ dobbiamo dimostrare che $z= \frac{z_1}{z_2}$
+
 ## La funzione logaritmica
 
 
